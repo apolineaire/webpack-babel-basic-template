@@ -22,8 +22,7 @@ const webpackConfig = {
                   }
                 }
               ]
-            ],
-            plugins: ['@babel/plugin-transform-async-to-generator']
+            ]
           }
         }
       },
