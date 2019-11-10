@@ -9,14 +9,17 @@ const displayTodos = async () => {
   if (listOfTodosFromServer) {
     listOfTodosFromServer.map(todo => {
       let string = `
-    <li>
-    <p class="inline">${todo.title}<p>
-    <p class="inline">${todo.completed === true ? 'fait' : 'à faire'}</p>
-    </li>`
+      <ul>
+    <li>${todo.title}<li>
+    <li>${todo.completed === true ? '✅' : '⟤'}
+    </li>
+    </ul>`
       listOfTodosToShow.push(string)
     })
     // insert in DOM
-    $('#app').append(listOfTodosToShow)
+    document
+      .querySelector('#app')
+      .insertAdjacentHTML('afterend', listOfTodosToShow)
   } else {
     $('#app').append('<h3>Sorry, failed to load todos</h3>')
   }

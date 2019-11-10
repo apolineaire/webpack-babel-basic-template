@@ -1,4 +1,15 @@
-.inline {
+h1 {
+  font-family: 'PT Serif', monospace;
+  font-weight: bold;
+  color: #00007d;
+}
+
+li {
   display: inline;
-  border: 1px solid red;
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
 }

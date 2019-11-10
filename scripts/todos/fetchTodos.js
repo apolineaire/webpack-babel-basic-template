@@ -7,12 +7,10 @@ const fetchTodos = async () => {
   await $.ajax({
     url: endpoints.todos,
     success: result => {
-      console.log('we did it ', result)
       arrayOfTodos = result
     }
   })
 
-  console.log('arrayOfTodos', arrayOfTodos)
   return arrayOfTodos
 }
 
