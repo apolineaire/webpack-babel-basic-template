@@ -4,15 +4,15 @@ This template allows to use ES modules, async/await and css imports based on an 
 
 Beware of the "special" config for `@babel/preset-env`. For generator functions and async/await to work, you need to specify :
 
-```json
+```js
 presets: [
-              [
-                '@babel/preset-env',
-                {
-                  targets: {
-                    node: 'current'
-                  }
-                }
-              ]
-            ]
+  [
+    '@babel/preset-env',
+    {
+      targets: {
+        node: 'current'
+      }
+    }
+  ]
+]
 ```
