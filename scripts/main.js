@@ -1,9 +1,8 @@
 import init from './init'
-import displayTodos from './todos/displayTodos'
+import '../style.css'
 
 const bootstrap = async () => {
   init()
-  await displayTodos()
 }
 
 bootstrap()

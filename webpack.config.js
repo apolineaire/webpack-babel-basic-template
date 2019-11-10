@@ -34,7 +34,10 @@ const webpackConfig = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: 'jQuery doubt', template: './index.html' }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack and Babel',
+      template: './index.html'
+    }),
     new CleanWebpackPlugin()
   ]
 }

@@ -1,4 +1,5 @@
-.inline {
-  display: inline;
-  border: 1px solid red;
+h1 {
+  font-family: 'PT Serif';
+  font-weight: bold;
+  color: #00007d;
 }

@@ -1,7 +1,7 @@
-import $ from 'jquery'
 const init = () => {
-  $(document.body).append('<div id="app"></div>')
-  $(document.body).append('<p>Hello</p>')
+  document
+    .querySelector('#app')
+    .insertAdjacentHTML('afterend', '<h1>Hello Webpack and Babel</h1>')
 }
 
 export default init
